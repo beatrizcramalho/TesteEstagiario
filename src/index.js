@@ -28,7 +28,7 @@ function enviar(){
 
     // Validar telefone.
     if (!regexTelefone.test(telefone)) {
-        alert("Por favor, insira um telefone válido (no formato xx xxxxxxxxx).");
+        alert("Por favor, insira um telefone válido (no formato xx xxxxx-xxxx).");
         return;
     }
 
