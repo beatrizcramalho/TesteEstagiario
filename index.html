@@ -1,0 +1,62 @@
+<!--
+    Criar uma página que deve conter um formulário com os seguintes campos:
+        Nome, email, telefone;
+        Um botão Enviar;
+        Utilizar somente o arquivo index.html
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formulário</title>
+    
+    <link rel="stylesheet" href="assets/style.css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <div>
+        <form>
+            <h1>Formulário</h1>
+
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="email@exemplo.com" >
+            </div>
+
+            <button type="submit" class="btn btn-success"  onclick="enviar()">Enviar</button>
+        </form>
+    </div>
+
+    <div id='box' class="card">
+        <img class="card-img-top" src="welcome.jpg" alt="Imagem de capa do card.">
+        <div class="card-body">
+          <h5 class="card-title">Bem-vindo</h5>
+          <p class="card-text">Obrigado por seu cadastro!</p>
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+</html>
